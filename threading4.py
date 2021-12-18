@@ -1,3 +1,4 @@
+# Exemplo para ilustrar threads
 import threading
 import random
 import sys
