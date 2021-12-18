@@ -1,19 +1,23 @@
+# Exemplo para ilustrar uso de lock
 import threading
 from threading import Thread
 from time import sleep
 
 
 counter = 0
+lock = threading.Lock()
 
 
 def increment(n):
-    global counter
-
+    global counter, lock
+    
+    lock.acquire()
     aux = counter
     aux += n
     sleep(0.5)
     counter = aux
     print(f"Current counter value: {counter}")
+    lock.release()
 
 
 t0 = Thread(target=increment, args=(15,))
