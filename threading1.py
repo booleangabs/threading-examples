@@ -32,4 +32,13 @@ def myTarget(name: str):
 t1 = threading.Thread(target=myTarget, args=("Maria",))
 
 t0.start()
+# t0.join()
 t1.start()
+# t1.join()
+
+# t0.join()
+# t1.join()
+
+# t0.daemon = True
+# t1.daemon = True
+# print("this runs after the thread")
