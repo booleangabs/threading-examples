@@ -1,3 +1,4 @@
+# Exemplo para ilustrar uso de Event
 import threading
 import time
 
