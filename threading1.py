@@ -1,3 +1,4 @@
+# Exemplo para ilustrar a criação de threads
 import threading
 import time
 
